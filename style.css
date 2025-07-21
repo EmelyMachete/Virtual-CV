@@ -1,26 +1,82 @@
-.project-card {
-  background-color: #ffffff;
-  border-left: 4px solid #2563eb;
+body {
+  background-color: #1e293b;
+  color: #f3f4f6;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0f172a;
+  color: #facc15;
   padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  text-align: center;
 }
 
-.project-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
+.hero, .skills, .projects, .contact {
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #334155;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+h1, h2 {
+  color: #facc15;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+a {
+  color: #facc15;
+}
+
+footer {
+  background-color: #0f172a;
+  color: #f3f4f6;
+  text-align: center;
+  padding: 10px;
+}
+
+.cv-download {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #facc15;
   color: #0f172a;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
-.project-card p {
-  font-size: 0.95rem;
-  margin-bottom: 8px;
+.cv-download:hover {
+  background-color: #eab308;
 }
 
-#projects h2 {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #0f172a;
-  padding-bottom: 5px;
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+form button {
+  background-color: #facc15;
+  color: #0f172a;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #eab308;
 }
