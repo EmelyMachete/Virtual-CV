@@ -2,39 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Emely Mokgadi Machete - Virtual CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a2e0e6f91b.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emely Machete - Virtual CV</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6f91b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <header>
-    <div class="logo">
-      <img src="profile.jpg" alt="Emely Mokgadi Machete" />
-      <span>EMELY MACHE</span>
+    <div class="header-container">
+      <img src="profile.jpg" alt="Emely Machete" class="profile-photo" />
+      <div class="header-text">
+        <h1>👩🏽‍💻 Emely Mokgadi Machete</h1>
+        <p>🎓 Final-Year IT Student | 💻 Junior Developer | 🧠 SQL & .NET Enthusiast</p>
+      </div>
     </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
-  <div class="social-sidebar" aria-label="Social media links">
-    <a href="https://linkedin.com/in/emelymachete" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-    <a href="https://youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-    <a href="https://github.com/EmelyMachete" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://www.goodreads.com/" target="_blank" aria-label="Books"><i class="fas fa-book"></i></a>
-  </div>
-
   <main>
-    <h1>HEY, I'M EMELY MACHE</h1>
-    <p>A passionate IT student building software and systems that solve real-world problems.</p>
-    <button class="btn-projects" onclick="location.href='#projects'">PROJECTS</button>
+    <section id="about">
+      <h2>🌟 About Me</h2>
+      <p>
+        I'm a passionate IT student at North-West University who thrives on bringing tech solutions to life.
+        I specialize in software development, database design, and secure networking. My career compass points to opportunities in Software Development, FinTech, or HealthTech.
+        Let's build smarter systems together.
+      </p>
+    </section>
+
+    <section id="cv">
+      <h2>📄 Resume</h2>
+      <a href="Emely_CV.pdf" download target="_blank" class="btn">
+        <i class="fas fa-file-download"></i> Download My CV (PDF)
+      </a>
+    </section>
+
+    <section id="projects">
+      <h2>🚀 Academic Projects</h2>
+      <ul>
+        <li><strong><a href="https://github.com/EmelyMachete/eco-events-management/blob/main/eco-events-management.pdf" target="_blank">Eco Events Management System</a>:</strong> ASP.NET Core app for planner and vendor coordination, with full CRUD and reporting.</li>
+        <li><strong><a href="https://github.com/EmelyMachete/network-design/blob/main/network-design-overview.pdf" target="_blank">Secure Network Design</a>:</strong> Enterprise network using Cisco Packet Tracer with VPN, VLANs, ISP failover, and budget analysis.</li>
+        <li><strong><a href="https://github.com/EmelyMachete/oracle-sql-system/blob/main/oracle-sql-system.pdf" target="_blank">Oracle SQL System</a>:</strong> Logistics database using Oracle SQL triggers, views, stored procedures, and normalized schema.</li>
+        <li><strong><a href="https://github.com/EmelyMachete/eishkom-simulator/blob/main/eishcom-system_overview.pdf" target="_blank">Eishkom Simulator Game</a>:</strong> Scratch game that teaches energy crisis and load shedding through interactive levels.</li>
+        <li><strong><a href="https://github.com/EmelyMachete/virtual-voting-platform/blob/main/virtual-voting-platform.pdf" target="_blank">Virtual Voting Platform</a>:</strong> JavaFX application with secure login, vote casting, and multi-level electoral logic.</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>🛠️ Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Java, Python, C#, C++, HTML, CSS</li>
+        <li><strong>Databases:</strong> Oracle SQL, MySQL, SQL Optimization</li>
+        <li><strong>Tools:</strong> GitHub, Cisco Packet Tracer, Visual Studio</li>
+        <li><strong>System Design:</strong> UML, ER Diagrams, System Analysis</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>📬 Contact Me</h2>
+      <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:macheteemely@gmail.com">macheteemely@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/emelymachete/" target="_blank">linkedin.com/in/emelymachete</a></p>
+      <p><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/EmelyMachete" target="_blank">github.com/EmelyMachete</a></p>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Emely Machete • All rights reserved ✨</p>
+  </footer>
 
 </body>
 </html>
