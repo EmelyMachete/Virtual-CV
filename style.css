@@ -83,8 +83,18 @@ h2 {
   padding-bottom: 5px;
 }
 
+h3 {
+  margin-top: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 ul {
   padding-left: 20px;
+  line-height: 1.6;
+  list-style-type: disc;
+  color: var(--text-color);
 }
 
 .download-btn {
