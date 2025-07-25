@@ -107,7 +107,41 @@ footer {
   padding: 10px;
 }
 
-/* Dark Theme */
+/* Projects section styles */
+.projects-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projects-list li {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-icon {
+  font-size: 1.4rem;
+  user-select: none;
+}
+
+.project-link {
+  color: var(--primary-color);
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover,
+.project-link:focus {
+  color: #ff5722; /* bright accent color */
+  text-decoration: underline;
+}
+
+/* Dark theme */
 .dark-mode {
   --bg-color: #1a1a1a;
   --text-color: #e4e4e4;
