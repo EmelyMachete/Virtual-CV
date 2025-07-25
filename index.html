@@ -3,74 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Emely Machete | Virtual CV</title>
+  <title>Emely Machete - Virtual CV</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer>
-    function toggleTheme() {
-      document.body.classList.toggle('dark-theme');
-    }
-  </script>
 </head>
 <body>
   <header>
-    <h1>Emely Mokgadi Machete</h1>
-    <p>Final-Year IT Student | Software Dev | Cybersecurity | Business Analysis</p>
-    <button onclick="toggleTheme()">Toggle Light/Dark Theme</button>
+    <div class="container">
+      <img src="emely.png" alt="Emely Machete" class="profile-pic" />
+      <div class="header-text">
+        <h1>Emely Mokgadi Machete</h1>
+        <p>Final-year BSc IT Student | Future Software Developer</p>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </div>
+    <nav class="navbar">
+      <a href="#about">About Me</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#cv">CV</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate final-year BSc Information Technology student at North-West University (graduating November 2025),
+        skilled in Java, Python, C#, and SQL. I am motivated by creative problem-solving and dedicated to building smart, scalable tech solutions.
+      </p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a final-year BSc Information Technology student at North-West University, graduating in November 2025. 
-      Passionate about solving problems using technology, I specialize in full-stack development, networks, and systems.
-    </p>
-  </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>You can download my CV below:</p>
+      <a href="Emely_Machete_CV.docx" class="download-btn" download>⬇️ Download My CV (.docx)</a>
+    </section>
 
-  <section id="cv">
-    <h2>Resume</h2>
-    <p>Click below to download my professionally styled CV:</p>
-    <a href="Emely_Machete_CV.docx" download class="download-btn">📄 Download CV (.docx)</a>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Eco Events Management System</strong> – ASP.NET & MySQL event booking platform.</li>
+        <li><strong>Secure Network Design</strong> – Cisco Packet Tracer with VLAN, VPN & failover.</li>
+        <li><strong>Oracle SQL Backend</strong> – Complex triggers, views & normalized database.</li>
+        <li><strong>Eishkom Simulator Game</strong> – Scratch game teaching power grid stability.</li>
+        <li><strong>Virtual Voting Platform</strong> – JavaFX app with secure multi-level voting.</li>
+      </ul>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Eco Events Management System</strong> – Full web app for event booking, admin dashboards, and reporting.</li>
-      <li><strong>Secure Network Design</strong> – Cisco VPN, VLAN, ISP failover setup in Packet Tracer.</li>
-      <li><strong>Oracle SQL Backend</strong> – Using triggers, views, and normalization.</li>
-      <li><strong>Eishkom Simulator Game</strong> – Built in Scratch to simulate load shedding and grid balance.</li>
-      <li><strong>Virtual Voting Platform</strong> – JavaFX app with secure logins and election casting features.</li>
-    </ul>
-  </section>
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Languages: Java, Python, C#, C++, HTML, CSS</li>
+        <li>Databases: Oracle SQL, MySQL</li>
+        <li>Tools: Visual Studio, GitHub, Cisco Packet Tracer</li>
+        <li>Concepts: OOP, Full-Stack Development, Cybersecurity, Networking</li>
+      </ul>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li><strong>Languages:</strong> Java, Python, C#, C++, HTML, CSS</li>
-      <li><strong>Databases:</strong> Oracle SQL, MySQL</li>
-      <li><strong>Tools:</strong> Visual Studio, GitHub, Cisco Packet Tracer</li>
-      <li><strong>Concepts:</strong> OOP, Full-Stack Dev, Networking, Cybersecurity</li>
-      <li><strong>Soft Skills:</strong> Communication, Teamwork, Adaptability</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>📍 Olievenhoutbosch, South Africa</p>
-    <p>📧 macheteemely@gmail.com | 📞 071 979 8016</p>
-    <p>🔗 <a href="https://linkedin.com/in/emelymachete" target="_blank">LinkedIn Profile</a></p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-links">
+        <li>Email: <a href="mailto:macheteemely@gmail.com">macheteemely@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/emelymachete" target="_blank">linkedin.com/in/emelymachete</a></li>
+        <li>GitHub: <a href="https://github.com/emelymachete" target="_blank">github.com/emelymachete</a></li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Emely Machete. All rights reserved.</p>
+    <p>&copy; 2025 Emely Machete</p>
   </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
