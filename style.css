@@ -1,76 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Emely Machete | Virtual CV</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer>
-    function toggleTheme() {
-      document.body.classList.toggle('dark-theme');
-    }
-  </script>
-</head>
-<body>
-  <header>
-    <h1>Emely Mokgadi Machete</h1>
-    <p>Final-Year IT Student | Software Dev | Cybersecurity | Business Analysis</p>
-    <button onclick="toggleTheme()">Toggle Light/Dark Theme</button>
-  </header>
+/* Light Theme Defaults */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --primary-color: #3b82f6;
+  --accent-color: #f1f5f9;
+}
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#cv">CV</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a final-year BSc Information Technology student at North-West University, graduating in November 2025. 
-      Passionate about solving problems using technology, I specialize in full-stack development, networks, and systems.
-    </p>
-  </section>
+header {
+  background: var(--primary-color);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
 
-  <section id="cv">
-    <h2>Resume</h2>
-    <p>Click below to download my professionally styled CV:</p>
-    <a href="Emely_Machete_CV.docx" download class="download-btn">📄 Download CV (.docx)</a>
-  </section>
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Eco Events Management System</strong> – Full web app for event booking, admin dashboards, and reporting.</li>
-      <li><strong>Secure Network Design</strong> – Cisco VPN, VLAN, ISP failover setup in Packet Tracer.</li>
-      <li><strong>Oracle SQL Backend</strong> – Using triggers, views, and normalization.</li>
-      <li><strong>Eishkom Simulator Game</strong> – Built in Scratch to simulate load shedding and grid balance.</li>
-      <li><strong>Virtual Voting Platform</strong> – JavaFX app with secure logins and election casting features.</li>
-    </ul>
-  </section>
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li><strong>Languages:</strong> Java, Python, C#, C++, HTML, CSS</li>
-      <li><strong>Databases:</strong> Oracle SQL, MySQL</li>
-      <li><strong>Tools:</strong> Visual Studio, GitHub, Cisco Packet Tracer</li>
-      <li><strong>Concepts:</strong> OOP, Full-Stack Dev, Networking, Cybersecurity</li>
-      <li><strong>Soft Skills:</strong> Communication, Teamwork, Adaptability</li>
-    </ul>
-  </section>
+.header-text h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>📍 Olievenhoutbosch, South Africa</p>
-    <p>📧 macheteemely@gmail.com | 📞 071 979 8016</p>
-    <p>🔗 <a href="https://linkedin.com/in/emelymachete" target="_blank">LinkedIn Profile</a></p>
-  </section>
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 6px 10px;
+  border: none;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
 
-  <footer>
-    <p>© 2025 Emely Machete. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  background-color: var(--accent-color);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+main {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact-links li {
+  margin-bottom: 8px;
+}
+
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Dark Theme */
+.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #e4e4e4;
+  --primary-color: #2563eb;
+  --accent-color: #2e2e2e;
+}
