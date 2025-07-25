@@ -1,128 +1,76 @@
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f3f4f6;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emely Machete | Virtual CV</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-theme');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Emely Mokgadi Machete</h1>
+    <p>Final-Year IT Student | Software Dev | Cybersecurity | Business Analysis</p>
+    <button onclick="toggleTheme()">Toggle Light/Dark Theme</button>
+  </header>
 
-header {
-  background-color: #0f172a;
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
-}
+  <nav>
+    <a href="#about">About</a>
+    <a href="#cv">CV</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-.header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a final-year BSc Information Technology student at North-West University, graduating in November 2025. 
+      Passionate about solving problems using technology, I specialize in full-stack development, networks, and systems.
+    </p>
+  </section>
 
-.profile-photo {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  border: 3px solid white;
-  margin-bottom: 15px;
-  animation: pulse 2s infinite;
-}
+  <section id="cv">
+    <h2>Resume</h2>
+    <p>Click below to download my professionally styled CV:</p>
+    <a href="Emely_Machete_CV.docx" download class="download-btn">📄 Download CV (.docx)</a>
+  </section>
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Eco Events Management System</strong> – Full web app for event booking, admin dashboards, and reporting.</li>
+      <li><strong>Secure Network Design</strong> – Cisco VPN, VLAN, ISP failover setup in Packet Tracer.</li>
+      <li><strong>Oracle SQL Backend</strong> – Using triggers, views, and normalization.</li>
+      <li><strong>Eishkom Simulator Game</strong> – Built in Scratch to simulate load shedding and grid balance.</li>
+      <li><strong>Virtual Voting Platform</strong> – JavaFX app with secure logins and election casting features.</li>
+    </ul>
+  </section>
 
-.header-text h1 {
-  margin: 10px 0 5px;
-  font-size: 2rem;
-}
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li><strong>Languages:</strong> Java, Python, C#, C++, HTML, CSS</li>
+      <li><strong>Databases:</strong> Oracle SQL, MySQL</li>
+      <li><strong>Tools:</strong> Visual Studio, GitHub, Cisco Packet Tracer</li>
+      <li><strong>Concepts:</strong> OOP, Full-Stack Dev, Networking, Cybersecurity</li>
+      <li><strong>Soft Skills:</strong> Communication, Teamwork, Adaptability</li>
+    </ul>
+  </section>
 
-.header-text p {
-  font-weight: 400;
-  font-size: 1rem;
-}
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📍 Olievenhoutbosch, South Africa</p>
+    <p>📧 macheteemely@gmail.com | 📞 071 979 8016</p>
+    <p>🔗 <a href="https://linkedin.com/in/emelymachete" target="_blank">LinkedIn Profile</a></p>
+  </section>
 
-main {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-section {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-h2 {
-  color: #0f172a;
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-a {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #1e3a8a;
-  text-decoration: underline;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #2563eb;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 6px;
-  margin-top: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.2s ease;
-}
-
-.btn:hover {
-  background-color: #1e40af;
-  transform: scale(1.05);
-}
-
-footer {
-  text-align: center;
-  background-color: #f1f5f9;
-  padding: 15px;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-@media (min-width: 768px) {
-  .header-container {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
-  .header-text {
-    text-align: left;
-  }
-}
+  <footer>
+    <p>© 2025 Emely Machete. All rights reserved.</p>
+  </footer>
+</body>
+</html>
