@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emely Machete - Virtual CV</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
       <img src="profile.jpg" alt="Emely Mokgadi Machete" class="profile-pic" />
       <div class="header-text">
         <h1>Emely Mokgadi Machete</h1>
-        <p>Junior Software Developer | ASP.NET Core • C# • SQL</p>
+        <p class="role">Junior Software Developer | ASP.NET Core • C# • SQL</p>
       </div>
       <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
     </div>
@@ -30,7 +31,7 @@
   <main>
 
     <!-- ABOUT -->
-    <section id="about">
+    <section id="about" class="section-card">
       <h2>About Me</h2>
       <p>
         I am a Junior Software Developer with a Bachelor of IT and hands-on experience building
@@ -46,13 +47,12 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
+    <section id="projects" class="section-card">
       <h2>Projects</h2>
-
-      <ul class="projects-list">
-        <li>
-          <span class="project-icon">🚀</span>
-          <strong>Event Management System</strong>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon">🚀</div>
+          <h3>Event Management System</h3>
           <p>
             ASP.NET Core MVC web application implementing full CRUD functionality.
             Built using C#, Razor Views, and MVC architecture to manage events with
@@ -63,44 +63,48 @@
              class="project-link">
             View on GitHub
           </a>
-        </li>
+        </div>
 
-        <li>
-          <span class="project-icon">💻</span>
-          <strong>Virtual CV Website</strong>
+        <div class="project-card">
+          <div class="project-icon">💻</div>
+          <h3>Virtual CV Website</h3>
           <p>
             Personal portfolio website built with HTML and CSS to showcase skills,
             projects, and professional background.
           </p>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
+    <section id="skills" class="section-card">
       <h2>Skills</h2>
-
-      <h3>Technical Skills</h3>
-      <ul>
-        <li><strong>Languages:</strong> C#, SQL</li>
-        <li><strong>Frameworks:</strong> ASP.NET Core MVC</li>
-        <li><strong>Web:</strong> HTML, CSS</li>
-        <li><strong>Tools:</strong> Visual Studio, Git, GitHub</li>
-        <li><strong>Concepts:</strong> MVC Architecture, CRUD Operations, OOP</li>
-      </ul>
-
-      <h3>Soft Skills</h3>
-      <ul>
-        <li>Problem Solving</li>
-        <li>Communication</li>
-        <li>Team Collaboration</li>
-        <li>Time Management</li>
-        <li>Adaptability</li>
-      </ul>
+      <div class="skills-grid">
+        <div>
+          <h3>Technical Skills</h3>
+          <ul>
+            <li><strong>Languages:</strong> C#, SQL</li>
+            <li><strong>Frameworks:</strong> ASP.NET Core MVC</li>
+            <li><strong>Web:</strong> HTML, CSS</li>
+            <li><strong>Tools:</strong> Visual Studio, Git, GitHub</li>
+            <li><strong>Concepts:</strong> MVC Architecture, CRUD Operations, OOP</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Team Collaboration</li>
+            <li>Time Management</li>
+            <li>Adaptability</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- RESUME -->
-    <section id="resume">
+    <section id="resume" class="section-card">
       <h2>Resume</h2>
       <p>You can download my CV below:</p>
       <a href="Emely_Machete_CV.pdf" class="download-btn" download>
@@ -109,7 +113,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
+    <section id="contact" class="section-card">
       <h2>Contact</h2>
       <ul class="contact-links">
         <li>Email: <a href="mailto:macheteemely@gmail.com">macheteemely@gmail.com</a></li>
