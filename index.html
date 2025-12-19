@@ -6,119 +6,122 @@
   <title>Emely Machete - Virtual CV</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
     <div class="container">
-      <img src="profile.jpg" alt="Emely Machete" class="profile-pic" />
+      <img src="profile.jpg" alt="Emely Mokgadi Machete" class="profile-pic" />
       <div class="header-text">
         <h1>Emely Mokgadi Machete</h1>
-        <p>Final-year BSc IT Student | Future Software Developer</p>
+        <p>Junior Software Developer | ASP.NET Core • C# • SQL</p>
       </div>
       <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
     </div>
+
     <nav class="navbar">
-      <a href="#about">About Me</a>
-      <a href="#resume">Resume</a>
+      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
+
+    <!-- ABOUT -->
     <section id="about">
       <h2>About Me</h2>
       <p>
-       I am a BSc Information Technology graduate with a strong foundation in software development and business analysis. I work mainly with Python, C#, and Java, building practical solutions and improving systems through clean code and structured analysis.I enjoy designing systems, solving problems, and learning new tools that improve development. I am currently seeking internship or junior roles in Software Development or Business Analysis. Outside of coding, I enjoy problem-solving, continuous learning, and improving my portfolio through real projects.
+        I am a Junior Software Developer with a Bachelor of IT and hands-on experience building
+        web applications using C#, ASP.NET Core MVC, and SQL. I enjoy developing clean,
+        maintainable solutions that follow structured development practices and solve real-world problems.
+      </p>
+      <p>
+        I recently completed a full CRUD Event Management System that demonstrates MVC architecture,
+        controller logic, form handling, and data manipulation. I am actively seeking an
+        entry-level or graduate software development opportunity where I can grow, contribute,
+        and learn from experienced developers.
       </p>
     </section>
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>You can download my CV below:</p>
-      <a href="Emely_Machete_CV.pdf" class="download-btn" download>⬇️ Download My CV (.pdf)</a>
-    </section>
-
+    <!-- PROJECTS -->
     <section id="projects">
       <h2>Projects</h2>
+
       <ul class="projects-list">
         <li>
           <span class="project-icon">🚀</span>
-          <strong>
-            <a href="https://github.com/EmelyMachete/eco-events-management/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="project-link">
-              <em>Eco Events Management System</em>
-            </a>
-          </strong> – ASP.NET & MySQL event booking platform.
+          <strong>Event Management System</strong>
+          <p>
+            ASP.NET Core MVC web application implementing full CRUD functionality.
+            Built using C#, Razor Views, and MVC architecture to manage events with
+            create, view, edit, and delete operations.
+          </p>
+          <a href="https://github.com/EmelyMachete/event-management-system"
+             target="_blank"
+             class="project-link">
+            View on GitHub
+          </a>
         </li>
+
         <li>
-          <span class="project-icon">🔐</span>
-          <strong>
-            <a href="https://github.com/EmelyMachete/network-design/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="project-link">
-              <em>Secure Network Design</em>
-            </a>
-          </strong> – Cisco Packet Tracer with VLAN, VPN & ISP failover.
-        </li>
-        <li>
-          <span class="project-icon">🗄️</span>
-          <strong>
-            <a href="https://github.com/EmelyMachete/oracle-sql-system/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="project-link">
-              <em>Oracle SQL Backend</em>
-            </a>
-          </strong> – Complex triggers, views & normalized database.
-        </li>
-        <li>
-          <span class="project-icon">🎮</span>
-          <strong>
-            <a href="https://github.com/EmelyMachete/Eishkom-Simulator-Game/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="project-link">
-              <em>Eishkom Simulator Game</em>
-            </a>
-          </strong> – Scratch game teaching power grid stability.
-        </li>
-        <li>
-          <span class="project-icon">🗳️</span>
-          <strong>
-            <a href="https://github.com/EmelyMachete/virtual-voting-platform/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="project-link">
-              <em>Virtual Voting Platform</em>
-            </a>
-          </strong> – JavaFX app with secure multi-level voting.
+          <span class="project-icon">💻</span>
+          <strong>Virtual CV Website</strong>
+          <p>
+            Personal portfolio website built with HTML and CSS to showcase skills,
+            projects, and professional background.
+          </p>
         </li>
       </ul>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills">
       <h2>Skills</h2>
 
       <h3>Technical Skills</h3>
       <ul>
-        <li>Languages: Java, Python, C#, C++, HTML, CSS</li>
-        <li>Databases: Oracle SQL, MySQL</li>
-        <li>Tools: Visual Studio, GitHub, Cisco Packet Tracer</li>
-        <li>Concepts: OOP, Full-Stack Development, Cybersecurity, Networking</li>
+        <li><strong>Languages:</strong> C#, SQL</li>
+        <li><strong>Frameworks:</strong> ASP.NET Core MVC</li>
+        <li><strong>Web:</strong> HTML, CSS</li>
+        <li><strong>Tools:</strong> Visual Studio, Git, GitHub</li>
+        <li><strong>Concepts:</strong> MVC Architecture, CRUD Operations, OOP</li>
       </ul>
 
       <h3>Soft Skills</h3>
       <ul>
-        <li>Communication</li>
-        <li>Teamwork</li>
         <li>Problem Solving</li>
-        <li>Adaptability</li>
+        <li>Communication</li>
+        <li>Team Collaboration</li>
         <li>Time Management</li>
-        <li>Analytical Thinking</li>
+        <li>Adaptability</li>
       </ul>
     </section>
 
+    <!-- RESUME -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>You can download my CV below:</p>
+      <a href="Emely_Machete_CV.pdf" class="download-btn" download>
+        ⬇️ Download My CV (PDF)
+      </a>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
       <ul class="contact-links">
         <li>Email: <a href="mailto:macheteemely@gmail.com">macheteemely@gmail.com</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/emelymachete" target="_blank">linkedin.com/in/emelymachete</a></li>
-        <li>GitHub: <a href="https://github.com/emelymachete" target="_blank">github.com/emelymachete</a></li>
+        <li>GitHub: <a href="https://github.com/EmelyMachete" target="_blank">github.com/EmelyMachete</a></li>
       </ul>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 Emely Machete</p>
+    <p>&copy; 2025 Emely Mokgadi Machete</p>
   </footer>
 
   <script>
@@ -128,4 +131,3 @@
   </script>
 </body>
 </html>
-
