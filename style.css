@@ -206,4 +206,15 @@ footer {
   .skills-grid {
     grid-template-columns: 1fr;
   }
+  .skills-list {
+  padding-left: 20px;
+  line-height: 1.8;
 }
+
+.skills-list li 
+  {
+  margin-bottom: 10px;
+}
+
+}
+
