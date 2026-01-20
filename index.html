@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Emely Machete - Virtual CV</title>
+  <title>Emely Machete - Data Analyst Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
       <img src="profile.jpg" alt="Emely Mokgadi Machete" class="profile-pic" />
       <div class="header-text">
         <h1>Emely Mokgadi Machete</h1>
-        <p class="role">Junior Software Developer | ASP.NET Core • C# • SQL</p>
+        <p class="role">Junior Data Analyst | SQL • Excel • Power BI</p>
       </div>
       <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
     </div>
@@ -34,13 +34,18 @@
     <section id="about" class="section-card">
       <h2>About Me</h2>
       <p>
-    I am a Bachelor of IT graduate focused on backend web development using C#, ASP.NET Core MVC, and SQL. I build structured, database-driven applications with an emphasis on correctness, maintainability, and clear system behavior rather than quick fixes or surface-level features.
+        I am a Bachelor of IT graduate focused on data analysis using SQL, Excel, and Power BI.
+        I work with structured data to answer business questions, identify trends, and support
+        decision making with clear evidence rather than assumptions.
       </p>
       <p>
-      Through hands-on projects, I have designed and implemented end-to-end web applications using clean MVC architecture, Entity Framework Core, and ASP.NET Core Identity. My work includes full CRUD workflows, server-side validation, database migrations, and secure authentication, with careful attention to how data flows through the system.
+        My projects focus on real operational problems such as pay equity, customer performance,
+        and churn. I clean messy datasets, write efficient SQL queries, validate results, and
+        translate findings into insights that non technical stakeholders can understand.
       </p>
       <p>
-      I am seeking a junior or graduate software development role where engineering standards matter, feedback is part of the process, and I can continue developing strong backend fundamentals while contributing to real-world systems.
+        I am seeking a junior or graduate data analyst role where data quality matters,
+        logic is challenged, and analysis leads to action.
       </p>
     </section>
 
@@ -50,12 +55,14 @@
       <div class="projects-grid">
 
         <div class="project-card">
-          <div class="project-icon">🚀</div>
-          <h3>Event Management System</h3>
+          <div class="project-icon">📊</div>
+          <h3>Employee Compensation & Pay Equity Analysis</h3>
           <p>
-            A web-based application built using ASP.NET Core MVC, C#, and SQL with Entity Framework Core. The system allows users to create, view, update, and delete events using a structured MVC architecture and a SQL-backed database.
+            SQL-based analysis evaluating salary distribution, gender pay gaps, and compensation
+            fairness across departments and job levels. Focused on identifying risk areas
+            and supporting fair pay decisions.
           </p>
-          <a href="https://github.com/EmelyMachete/event-management-system"
+          <a href="https://github.com/EmelyMachete/employee-compensation-analysis"
              target="_blank"
              class="project-link">
             View on GitHub
@@ -63,12 +70,14 @@
         </div>
 
         <div class="project-card">
-          <div class="project-icon">📝</div>
-          <h3>Task Management System</h3>
+          <div class="project-icon">📈</div>
+          <h3>Sales & Customer Performance Analysis</h3>
           <p>
-            An ASP.NET Core MVC application built with C# that allows users to manage tasks with create, edit, and delete functionality. The project follows MVC architecture and includes validation and clean UI design.
+            End-to-end SQL and BI project analyzing revenue trends, customer behavior,
+            retention patterns, and product performance. Insights presented using dashboards
+            for business users.
           </p>
-          <a href="https://github.com/EmelyMachete/TaskManagementSystem"
+          <a href="https://github.com/EmelyMachete/sales-customer-performance-analysis"
              target="_blank"
              class="project-link">
             View on GitHub
@@ -76,63 +85,36 @@
         </div>
 
         <div class="project-card">
-          <div class="project-icon">🔐</div>
-          <h3>User Authentication System</h3>
+          <div class="project-icon">🧪</div>
+          <h3>Customer Churn Analysis (In Progress)</h3>
           <p>
-            An ASP.NET Core application implementing authentication and authorization using Identity. Features include user registration, login, logout, protected pages, and database-backed identity management.
-          </p>
-          <a href="https://github.com/EmelyMachete/UserAuthenticationSystem"
-             target="_blank"
-             class="project-link">
-            View on GitHub
-          </a>
-        </div>
-
-        <div class="project-card">
-          <div class="project-icon">💻</div>
-          <h3>Virtual CV Website</h3>
-          <p>
-            Personal portfolio website built with HTML and CSS to showcase skills,
-            projects, and professional background.
+            Analytical project exploring churn drivers using cleaned telecom customer data.
+            Includes exploratory analysis, churn segmentation, and insight-driven recommendations
+            rather than surface-level metrics.
           </p>
         </div>
 
       </div>
     </section>
 
-    <!-- SKILLS ANCHOR -->
-    <div id="skills"></div>
-
-    <!-- TECHNICAL SKILLS -->
-    <section class="section-card">
+    <!-- SKILLS -->
+    <section id="skills" class="section-card">
       <h2>Technical Skills</h2>
       <ul class="skills-list">
-        <li>💻 <strong>Languages:</strong> C#, SQL, HTML, CSS</li>
-        <li>🛠 <strong>Frameworks:</strong> ASP.NET Core MVC, Entity Framework Core</li>
-        <li>🗄 <strong>Databases:</strong> SQL Server, MySQL</li>
-        <li>⚙️ <strong>Tools:</strong> Visual Studio, Git, GitHub</li>
-        <li>📐 <strong>Concepts:</strong> MVC Architecture, CRUD Operations, Database Design</li>
-      </ul>
-    </section>
-
-    <!-- SOFT SKILLS -->
-    <section class="section-card">
-      <h2>Soft Skills</h2>
-      <ul class="skills-list">
-        <li>🧠 Problem Solving</li>
-        <li>💬 Communication</li>
-        <li>🤝 Team Collaboration</li>
-        <li>⏰ Time Management</li>
-        <li>🔄 Adaptability</li>
+        <li>📊 <strong>Data Analysis:</strong> Exploratory Analysis, Data Cleaning, Validation</li>
+        <li>🗄 <strong>SQL:</strong> Joins, CTEs, Aggregations, Window Functions</li>
+        <li>📈 <strong>BI Tools:</strong> Power BI (Dashboards, DAX Basics)</li>
+        <li>📄 <strong>Excel:</strong> Pivot Tables, Lookups, Data Preparation</li>
+        <li>⚙️ <strong>Tools:</strong> Git, GitHub, VS Code</li>
       </ul>
     </section>
 
     <!-- RESUME -->
     <section id="resume" class="section-card">
       <h2>Resume</h2>
-      <p>You can download my CV below:</p>
+      <p>Download my CV:</p>
       <a href="Emely_Machete_CV.pdf" class="download-btn" download>
-        ⬇️ Download My CV (PDF)
+        ⬇️ Download CV (PDF)
       </a>
     </section>
 
@@ -149,7 +131,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Emely Mokgadi Machete</p>
+    <p>&copy; 2026 Emely Mokgadi Machete</p>
   </footer>
 
   <script>
@@ -159,8 +141,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
