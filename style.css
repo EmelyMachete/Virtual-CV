@@ -11,7 +11,7 @@ body {
   --text-color: #222;
   --primary-color: #2563eb;
   --accent-color: #f4f6f8;
-  --gradient: linear-gradient(135deg,#2563eb,#3b82f6);
+  --gradient: linear-gradient(135deg, #2563eb, #3b82f6);
   --card-bg: #ffffff;
   --card-shadow: rgba(0,0,0,0.1);
 }
@@ -51,8 +51,8 @@ header {
 }
 
 .role {
-  font-weight: 500;
-  color: #f0f0f0;
+  font-weight: 600;
+  opacity: 0.95;
 }
 
 .theme-toggle {
@@ -157,15 +157,13 @@ h3 {
   color: #ff5722;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+.skills-list {
+  padding-left: 20px;
+  line-height: 1.8;
 }
 
-.skills-grid ul {
-  padding-left: 20px;
-  line-height: 1.6;
+.skills-list li {
+  margin-bottom: 10px;
 }
 
 .download-btn {
@@ -194,6 +192,7 @@ footer {
   padding: 15px;
 }
 
+/* DARK MODE */
 .dark-mode {
   --bg-color: #121212;
   --text-color: #e4e4e4;
@@ -202,19 +201,9 @@ footer {
   --card-shadow: rgba(0,0,0,0.5);
 }
 
+/* RESPONSIVE */
 @media (max-width: 700px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .navbar {
+    gap: 15px;
   }
-  .skills-list {
-  padding-left: 20px;
-  line-height: 1.8;
 }
-
-.skills-list li 
-  {
-  margin-bottom: 10px;
-}
-
-}
-
